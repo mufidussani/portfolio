@@ -1,18 +1,20 @@
+import ScrollReveal from 'scrollreveal'
+
 // hamburger
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
 
 // navbar fix
-windows.onscroll = function() {
+windows.onscroll = function () {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
-    if(window.pageYOffset > fixedNav) {
+    if (window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed');
     }
     else {
