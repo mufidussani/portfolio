@@ -46,3 +46,9 @@ body {
 #myBtn:hover {
   background-color: royalblue; /* Add a dark-grey background on hover */
 }
+
+@media screen and (min-width: 1024px) {
+  .responsive-width {
+    width: 50%;
+  }
+}

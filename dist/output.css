@@ -1030,6 +1030,12 @@ body {
   /* Add a dark-grey background on hover */
 }
 
+@media screen and (min-width: 1024px) {
+  .responsive-width {
+    width: 50%;
+  }
+}
+
 .hover\:border-dark:hover {
   --tw-border-opacity: 1;
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
