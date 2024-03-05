@@ -6,6 +6,16 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
+.linkedin {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.linkedin:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease-in-out;
+}
+
 .navbar-fixed {
   @apply fixed z-[9999] bg-white bg-opacity-80;
   backdrop-filter: blur(5px);
@@ -36,15 +46,17 @@ body {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: teal; /* Set a background color */
-  color: blanchedalmond; /* Text color */
+  background-color: #9d8854; /* Set a background color */
+  color: whitesmoke; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 14px; /* Increase font size */
+  transition: background-color 0.5s ease-in-out;
 }
 #myBtn:hover {
-  background-color: royalblue; /* Add a dark-grey background on hover */
+  background-color: #76663f; /* Add a dark-grey background on hover */
+  transition: background-color 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {

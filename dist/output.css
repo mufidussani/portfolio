@@ -542,6 +542,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -578,10 +586,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -590,12 +594,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-3 {
@@ -608,10 +608,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .mt-4 {
@@ -656,14 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[150px\] {
-  max-width: 150px;
-}
-
-.max-w-\[110px\] {
-  max-width: 110px;
 }
 
 .origin-top-left {
@@ -960,6 +948,16 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
+.linkedin {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.linkedin:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease-in-out;
+}
+
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
@@ -1011,9 +1009,9 @@ body {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: teal;
+  background-color: #9d8854;
   /* Set a background color */
-  color: blanchedalmond;
+  color: whitesmoke;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
@@ -1023,11 +1021,13 @@ body {
   /* Rounded corners */
   font-size: 14px;
   /* Increase font size */
+  transition: background-color 0.5s ease-in-out;
 }
 
 #myBtn:hover {
-  background-color: royalblue;
+  background-color: #76663f;
   /* Add a dark-grey background on hover */
+  transition: background-color 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1049,11 +1049,6 @@ body {
 .hover\:bg-slate-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#25D366\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 211 102 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary:hover {
